@@ -1,0 +1,137 @@
+/* Global's */
+
+body{
+    display: flex;
+    background-color: hsl(0, 0%, 95%);  
+    min-height: 800px;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    margin-bottom: 100px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border-color: transparent;
+    text-decoration: unset;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/* Container */
+
+.flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Item's */
+
+.flexbox-item{
+    padding: 45px;
+    min-height: 350px;
+    width: 200px;
+}
+
+/* each item */
+
+.sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.sedans button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suv button{
+    color: hsl(184, 100%, 22%);
+}
+
+.suv button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+
+.luxury button:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+}
+
+/* Responsive tablet */
+
+@media (max-width: 900px){
+
+    .flexbox-container{
+        padding: 80px 0;
+    }
+
+    .sedans{
+        border-radius: 10px 0 0 10px;
+    }
+
+    .suv{
+        border-radius: 0 10px 10px 0;
+    }
+
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* Responsive mobile */
+
+@media (max-width: 650px) {
+    .flexbox-container{
+        flex-direction: column;
+    }
+
+    .sedans{
+        border-radius: 10px 10px 0 0;
+    }
+
+    .suv{
+        border-radius: unset;
+    }
+
+    .luxury{
+        border-radius: 0 0 10px 10px;
+    }
+}
+
